@@ -1,6 +1,6 @@
-;(function (designWidth, maxWidth) {
-    var doc = document,
-        win = window;
+(function (designWidth, maxWidth) {
+    var doc = document;
+    var win = window;
     var docEl = doc.documentElement;
     var tid;
     var rootItem, rootStyle;
@@ -10,7 +10,6 @@
         if (!maxWidth) {
             maxWidth = 540;
         }
-        ;
         if (width > maxWidth) {
             width = maxWidth;
         }
@@ -34,7 +33,7 @@
         }
         //兼容UC结束
         docEl.style.fontSize = rem + "px";
-    };
+    }
     refreshRem();
 
     win.addEventListener("resize", function () {
